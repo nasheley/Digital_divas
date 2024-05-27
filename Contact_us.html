@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= 1250, initial-scale=1.0">
+    <title>Contact Section</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <img src="440953464_997578571887532_7380343056347264412_n.png" alt="logo" width="1270" height="500">
+    <marquee behavior="scroll" direction="left">
+    Digital Divas: Website Developer: Reign Ashley V. Ortiz, Manager: Lhynn Shy P. Zaide, Data Analyst: Michaella Dyienne V. Avellana, Content: Asiel Jezreel M. Buquid, Website Designer: Ma. Chamel E. Servania 
+    </marquee>
+
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(#32a852, #a0e37e);
+            margin: 10;
+            padding: 0;
+            color: #333;
+            text-align: center;
+        }
+        .banner {
+            background-color: #217a36;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .card {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .card h3 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+    <header class="banner">
+        <h2>FNIHS Senior High School Programs and Strands</h2>
+    </header>
+    
+<button class="btn danger"><a href="https://nasheley.github.io/Digital_divas/FamyNIHS_SHSPrograms.html">Home</a></button>
+
+<button class="btn danger"><a href="https://nasheley.github.io/Digital_divas/About_school.html">About School</a></button>
+
+<button class="btn danger"><a href="https://nasheley.github.io/Digital_divas/Academic.html">Academic</a></button>
+
+<button class="btn danger"><a href="https://nasheley.github.io/Digital_divas/TVL.html">TVL</a></button>
+
+<button class="btn danger"><a href="https://nasheley.github.io/Digital_divas/Contact_us.html">Contact Us</a></button> 
+   
+    <style>
+        .contact-section {
+            background-color: #1c2532;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 100%;
+            margin: auto;
+            text-align: center;
+        }
+        .contact-info {
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .contact-info i {
+            margin-right: 10px;
+        }
+        #map {
+            height: 300px;
+            width: 100%;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-section">
+        <h1>Contact Us</h1>
+        <div class="contact-info">
+            <i class="fas fa-envelope"></i>
+            <p><strong>Email:</strong> 301240@deped.gov.ph</p>
+        </div>
+        <div class="contact-info">
+            <i class="fas fa-phone"></i>
+            <p><strong>Phone:</strong> (049) 501-1694 / 501-501-0594</p>
+        </div>
+         <div class="contact-info">
+            <i class="fas fa-facebook"></i>
+            <p><strong>Facebook Page:</strong> https://www.facebook.com/DepEdTayoFamyNIHS301240?mibextid=LQQJ4d</p>
+        </div>
+        <div class="contact-info">
+            <i class="fas fa-map-marker-alt"></i>
+            <p><strong>Address:</strong> Brgy. Tunhac II. Famy, Laguna, Philippines</p>
+        </div>
+       
+        <div id="map">https://www.google.com/maps/place/Famy+National+Integrated+High+School+-+Campus+II/@14.4382785,121.4509239,17.17z/data=!4m6!3m5!1s0x3397f2366a138799:0x5955ec573a59654c!8m2!3d14.4382352!4d121.4509133!16s%2Fg%2F1vhlvq5j?entry=ttu</div>
+    </div>
+
+    <script>
+        function initMap() {
+            var location = {lat: -34.397, lng: 150.644}; // Example coordinates
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 8,
+                center: location
+            });
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map
+            });
+        }
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+    </script>
+
+</body>
+</html>
